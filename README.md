@@ -3,7 +3,8 @@
 **A structural sieve correction factor of 1/25, locked by cyclic constraints and 45° balance.**
 
 ---
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+---
 ## 🔍 Overview
 
 This repository documents the **9423 phase‑lock invariant** — a refinement of the singular series in sieve theory, motivated by parity obstructions and verified numerically across primorial scales.
