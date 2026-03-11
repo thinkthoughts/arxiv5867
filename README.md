@@ -17,6 +17,13 @@ The invariant emerges from:
 - **45°** = phase where even/odd contributions balance
 
 ---
+## 🚀 Getting Started
+
+### Install dependencies
+```bash
+pip install -r requirements.txt
+
+---
 
 ## 🧮 Core Identity
 
