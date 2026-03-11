@@ -2,7 +2,7 @@
 Primorial-scale verification of the 1/25 invariant gap.
 Implements the Type II bilinear sum checks.
 """
-
+from sympy import totient
 import numpy as np
 from typing import List, Tuple
 from sympy import primerange, isprime, mobius
