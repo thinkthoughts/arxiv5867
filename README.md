@@ -84,20 +84,31 @@ python -m unittest code/tests/test_left5_re_lift5.py
 ## 🧠 Left5‑Re‑Lift5 (Pseudocode)
 
 def left5_re_lift5(scores, step, alpha=24/25):
+
     allowed_class = [9,4,2,3][step % 4]
+    
     tokens = filter_by_hash_mod(scores.keys(), allowed_class, mod=20)
+    
     if not tokens:
+    
         return None
+        
     logits = [scores[t] for t in tokens]
+    
     probs = softmax(logits)
+
     probs = alpha * probs + (1 - alpha) * (1/len(tokens))
+    
     return sample(tokens, probs)
+    
 ## 🚦 Connection to SDG5
 
 SDG5 (gender equality) enters not as a slogan but as a symmetry condition:
 
 At 45°, even/odd contributions balance
+
 The 1/25 term is the space where freedom persists
+
 Structural equity = preserving that gap, not flattening it
 
 ## 📐 45° Invariant
@@ -109,8 +120,11 @@ The system remains phase‑locked. (No drift. No collapse.)
 ## 📚 References
 
 Friedlander–Iwaniec, Opera de Cribro
+
 Tao, The parity problem in sieve theory
+
 Karatsuba, Basic analytic number theory
 
 ## 📄 License
+
 MIT © 2026 thinkthoughts
