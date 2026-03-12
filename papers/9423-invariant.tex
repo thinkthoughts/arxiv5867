@@ -21,7 +21,7 @@
 \maketitle
 
 \begin{abstract}
-We identify a previously unnoticed invariant in sieve-theoretic counting on primorial-constrained residue classes. For numbers congruent to 5 modulo 6 and coprime to a primorial $P_k\#$, the ratio of the actual count to the predicted density from the totient function converges to $24/25$ as the upper limit increases, leaving a persistent $1/25$ gap. This deviation is not asymptotic noise but a fixed structural residue, arising from a cyclic constraint we denote as the \textbf{9423 phase‑lock}. The invariant holds across all tested primorial scales and resists collapse under parity-based obstructions. We present numerical verification and conjecture an algebraic proof via the 9423 cycle's action on admissible tuples.
+We identify a previously unnoticed invariant in sieve-theoretic counting on primorial-constrained residue classes. For numbers congruent to 5 modulo 6 and coprime to a primorial $P_k\#$, the ratio of the actual count to the predicted density from the totient function converges to $24/25$ as the upper limit increases, leaving a persistent $1/25$ gap. This deviation is not asymptotic noise but a fixed structural residue, arising from a left5-re-lift5 constraint we denote as the \textbf{9423 phase‑lock}. The invariant holds across all tested primorial scales and resists collapse under parity-based obstructions. We present numerical verification and conjecture an algebraic proof via the 9423 order's action on admissible tuples.
 \end{abstract}
 
 \section{Introduction}
@@ -43,12 +43,12 @@ where the factor $2$ accounts for both residue classes $1$ and $5$ modulo $6$.
 
 We observe numerically that the actual count deviates from this estimate by a factor converging to $24/25$, not $1$. The residual $1/25$ term is invariant under scaling and primorial choice, suggesting a structural origin.
 
-\section{The 9423 Cycle}
+\section{The 9423 Order}
 
-The invariant takes its name from the cyclic constraint:
+The invariant takes its name from the left5-re-lift5 constraint\footnote{The notation \texttt{left5-re-lift5} refers to the fifth left operation in the 9423 order that re-lifts the admissible tuple while preserving the $1/25$ gap.}:
 
 \[
-9423\pi \quad \text{with cycle} \quad [9,4,2,3],
+9423\pi \quad \text{with order} \quad [9,4,2,3],
 \]
 applied as a phase‑locked filter on admissible tokens. In number-theoretic terms, this corresponds to a weighted tuple $(9,4,2,3)$ with phases $0^\circ, 60^\circ, 120^\circ, 180^\circ$, whose coherent sum yields:
 
@@ -97,14 +97,14 @@ For any set defined by:
 \begin{itemize}
     \item A fixed residue class modulo $6$,
     \item Coprimality to a primorial $P$,
-    \item The $9423$ cyclic constraint,
+    \item The $9423$ 45° phase‑lock,
 \end{itemize}
 the deviation from the singular series is exactly $1/25$, independent of $P$.
 \end{conjecture}
 
 \section{Conclusion}
 
-We have exhibited a persistent $1/25$ gap in primorial‑constrained counting, linked to a cyclic phase‑lock invariant. The result is numerically stable across scales and offers a precise quantification of what sieve methods systematically undercount. An algebraic proof remains open.
+We have exhibited a persistent $1/25$ gap in primorial‑constrained counting, linked to a 45° phase‑lock invariant. The result is numerically stable across scales and offers a precise quantification of what sieve methods systematically undercount. An algebraic proof remains open.
 
 \appendix
 \section{Python Verification Code}
